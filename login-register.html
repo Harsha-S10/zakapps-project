@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>ABOKICHI | Login / Register</title>
+
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="auth">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>USD</span>
+        <a href="shop.html">Stores</a>
+      </div>
+      <a class="top-bar__right" href="login-register.html">Login / Register</a>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="index.html" aria-label="ABOKICHI home">
+        <img src="images/own-logo.png" alt="ABOKICHI Logo" class="brand__logo">
+        <span class="brand__text">ABOKICHI</span>
+      </a>
+      <nav class="nav-links" data-nav-menu>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#story">Our story</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <span class="icon-heart"></span>
+          <span class="badge is-hidden" data-wishlist-count></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <span class="icon-bag"></span>
+          <span class="badge is-hidden" data-cart-count></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section auth-page">
+    <div class="auth-shell">
+      <section class="auth-card">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Login</h1>
+        <form class="auth-form">
+          <label>Email<input type="email" placeholder="you@example.com"></label>
+          <label>Password<input type="password" placeholder="••••••••"></label>
+          <button class="btn btn--primary" type="button">Sign in</button>
+        </form>
+      </section>
+      <section class="auth-card">
+        <p class="eyebrow">New here?</p>
+        <h1>Register</h1>
+        <form class="auth-form">
+          <label>Name<input type="text" placeholder="Your name"></label>
+          <label>Email<input type="email" placeholder="you@example.com"></label>
+          <label>Password<input type="password" placeholder="Create a password"></label>
+          <button class="btn btn--outline" type="button">Create account</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

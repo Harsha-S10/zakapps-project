@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+  <title>ABOKICHI | Order placed</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="order">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>USD</span>
+        <a href="shop.html">Stores</a>
+      </div>
+      <a class="top-bar__right" href="login-register.html">Login / Register</a>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="index.html" aria-label="ABOKICHI home">
+        <img src="images/own-logo.png" alt="ABOKICHI Logo" class="brand__logo">
+        <span class="brand__text">ABOKICHI</span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <span class="icon-heart"></span>
+          <span class="badge is-hidden" data-wishlist-count></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <span class="icon-bag"></span>
+          <span class="badge is-hidden" data-cart-count></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section order-page">
+    <div class="order-card">
+      <p class="eyebrow">Checkout complete</p>
+      <h1>Order Placed</h1>
+      <p>Your demo order has been confirmed. This page is the success state.</p>
+      <a class="btn btn--primary" href="shop.html">Back to shop</a>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

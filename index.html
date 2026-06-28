@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+  <title>ABOKICHI | Home</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>USD</span>
+        <a href="shop.html">Stores</a>
+      </div>
+      <a class="top-bar__right" href="login-register.html">Login / Register</a>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="index.html" aria-label="ABOKICHI home">
+        <img src="images/own-logo.png" alt="ABOKICHI Logo" class="brand__logo">
+        <span class="brand__text">ABOKICHI</span>
+      </a>
+      <button class="mobile-toggle" type="button" data-menu-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" data-nav-menu>
+        <a href="shop.html">Shop</a>
+        <a href="#story">Our story</a>
+        <a href="#recipes">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Search">
+          <span class="icon-search"></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <span class="icon-heart"></span>
+          <span class="badge is-hidden" data-wishlist-count></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <span class="icon-bag"></span>
+          <span class="badge is-hidden" data-cart-count></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--home">
+      <div class="hero__gallery">
+        <a class="hero-card hero-card--tall art" href="shop.html" aria-label="Explore products" style="background-image:url('images/home-page-1.png')">
+          <div class="art__label">Crafted miso + okazu</div>
+        </a>
+        <a class="hero-card art" href="shop.html" aria-label="Explore products" style="background-image:url('images/home-page-2.png')">
+          <div class="art__label">Comfort bowls</div>
+        </a>
+        <a class="hero-card art" href="shop.html" aria-label="Explore products" style="background-image:url('images/home-page-3.png')">
+          <div class="art__label">Umami jars</div>
+        </a>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Japanese pantry essentials</p>
+        <h1>Nourish Yourself with Miso Goodness</h1>
+        <p class="hero__copy">A clean storefront concept for Abokichi with a warm, modern look, product filtering, and detail-page navigation built in vanilla HTML, CSS, and JavaScript.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="shop.html">Shop now</a>
+          <a class="btn btn--ghost" href="#featured">View featured</a>
+        </div>
+        <p class="shipping-note">Free shipping within the US for orders of $54 or more</p>
+      </div>
+    </section>
+
+    <section class="trust-strip trust-strip--home">
+      <span>Vegan</span>
+      <span>KETO-friendly</span>
+      <span>Non-GMO</span>
+      <span>Organic miso</span>
+      <span>Gluten-Free</span>
+    </section>
+
+    <section class="section section--feature-tiles" id="story">
+      <a class="feature-tile" href="shop.html">
+        <div class="feature-tile__image art" style="background-image:url('images/our-story.png')"></div>
+        <div class="feature-tile__label">Our story</div>
+      </a>
+      <a class="feature-tile" href="shop.html">
+        <div class="feature-tile__image art" style="background-image:url('images/recipes.png')"></div>
+        <div class="feature-tile__label">Recipes</div>
+      </a>
+    </section>
+
+    <section class="section section--best-sellers" id="featured">
+      <div class="section-heading section-heading--center">
+        <div class="section-heading__ornament">◎</div>
+        <h2>Best Sellers</h2>
+      </div>
+      <div class="featured-grid" data-featured-grid></div>
+    </section>
+
+    <section class="section section--video-banner">
+      <a class="video-banner" href="shop.html" aria-label="Open shop collection">
+        <div class="video-banner__play">▶</div>
+        <div class="video-banner__text">A Cup a Day for a Probiotic Boost</div>
+      </a>
+    </section>
+
+    <section class="section section--press">
+      <div class="press-logos">
+        <span>The Globe and Mail</span>
+        <span>edible Toronto</span>
+        <span>CBC</span>
+        <span>blogTO</span>
+        <span>National Post</span>
+        <span>Global</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="newsletter-banner">
+      <div>
+        <strong>SUBSCRIBE NEWSLETTER</strong>
+        <p>Get the latest on sales, new releases and more.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your mail" aria-label="Email address" />
+        <button class="btn btn--primary" type="button">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h3>Links</h3>
+        <a href="#">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="#">Customer Service</a>
+        <a href="#">FAQs</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund policy</a>
+        <a href="#">Press</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>ABOKICHI</span>
+      <a href="shop.html">Browse shop</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+  <title>ABOKICHI | Shop</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>USD</span>
+        <a href="shop.html">Stores</a>
+      </div>
+      <a class="top-bar__right" href="login-register.html">Login / Register</a>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="index.html" aria-label="ABOKICHI home">
+        <img src="images/own-logo.png" alt="ABOKICHI Logo" class="brand__logo">
+        <span class="brand__text">ABOKICHI</span>
+      </a>
+      <button class="mobile-toggle" type="button" data-menu-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" data-nav-menu>
+        <a class="is-active" href="shop.html">Shop</a>
+        <a href="index.html#story">Our story</a>
+        <a href="index.html#recipes">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Search">
+          <span class="icon-search"></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <span class="icon-heart"></span>
+          <span class="badge is-hidden" data-wishlist-count></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <span class="icon-bag"></span>
+          <span class="badge is-hidden" data-cart-count></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--shop">
+      <div class="page-hero__gallery page-hero__gallery--shop">
+        <div class="page-hero__shot" style="background-image:url('images/best-seller-1.png')"></div>
+        <div class="page-hero__shot" style="background-image:url('images/best-seller-2.png')"></div>
+        <div class="page-hero__shot" style="background-image:url('images/best-seller-3.png')"></div>
+        <div class="page-hero__shot" style="background-image:url('images/best-seller-4.png')"></div>
+      </div>
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <p class="eyebrow">Shop collection</p>
+        <h1>Products</h1>
+      </div>
+    </section>
+
+    <section class="section section--shop">
+      <div class="shop-toolbar">
+        <div class="shop-toolbar__left">
+          <h2>Products <span data-product-count>(6)</span></h2>
+          <button class="filter-toggle" type="button" data-filter-toggle>
+            <span class="tool-icon tool-icon--filter" aria-hidden="true"></span>
+            <span>Filter</span>
+          </button>
+          <div class="view-switch" aria-label="View switch">
+            <button class="view-switch__btn is-active" type="button" aria-label="Grid view">
+              <span class="tool-icon tool-icon--grid" aria-hidden="true"></span>
+            </button>
+            <button class="view-switch__btn" type="button" aria-label="List view">
+              <span class="tool-icon tool-icon--list" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <label class="sort-control">
+          <span>Sort By:</span>
+          <select data-sort-select>
+            <option value="featured">Featured</option>
+            <option value="alpha-asc">Alphabetically, A-Z</option>
+            <option value="alpha-desc">Alphabetically, Z-A</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="price-desc">Price, high to low</option>
+            <option value="rating-desc">Rating, high to low</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filters-panel is-open" data-filter-panel>
+          <div class="filter-group">
+            <h3>Categories</h3>
+            <div class="filter-list" data-filter-group="category"></div>
+          </div>
+          <div class="filter-group">
+            <h3>Type</h3>
+            <div class="filter-list" data-filter-group="type"></div>
+          </div>
+          <div class="filter-group">
+            <h3>Flavours</h3>
+            <div class="filter-list" data-filter-group="flavor"></div>
+          </div>
+          <div class="filter-group">
+            <h3>Rating</h3>
+            <div class="filter-list" data-filter-group="rating"></div>
+          </div>
+          <button class="btn btn--ghost btn--full" type="button" data-clear-filters>
+            <span class="tool-icon tool-icon--clear" aria-hidden="true"></span>
+            <span>Clear filters</span>
+          </button>
+        </aside>
+
+        <section class="products-area">
+          <div class="products-grid products-grid--shop" data-products-grid></div>
+          <p class="empty-state is-hidden" data-empty-state>No products match your filters. Try clearing one or more filters.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="newsletter-banner">
+      <div>
+        <strong>SUBSCRIBE NEWSLETTER</strong>
+        <p>Get the latest on sales, new releases and more.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your mail" aria-label="Email address" />
+        <button class="btn btn--primary" type="button">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h3>Links</h3>
+        <a href="#">About us</a>
+        <a href="contact.html">Contact us</a>
+        <a href="#">Customer Service</a>
+        <a href="#">FAQs</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund policy</a>
+        <a href="#">Press</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>ABOKICHI</span>
+      <a href="index.html">Back home</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

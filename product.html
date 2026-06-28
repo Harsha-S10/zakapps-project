@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+  <title>ABOKICHI | Product</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="product">
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar__left">
+        <span>USD</span>
+        <a href="shop.html">Stores</a>
+      </div>
+      <a class="top-bar__right" href="login-register.html">Login / Register</a>
+    </div>
+    <div class="main-nav">
+      <a class="brand" href="index.html" aria-label="ABOKICHI home">
+        <img src="images/own-logo.png" alt="ABOKICHI Logo" class="brand__logo">
+        <span class="brand__text">ABOKICHI</span>
+      </a>
+      <button class="mobile-toggle" type="button" data-menu-toggle aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" data-nav-menu>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#story">Our story</a>
+        <a href="index.html#recipes">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Search">
+          <span class="icon-search"></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Wishlist">
+          <span class="icon-heart"></span>
+          <span class="badge is-hidden" data-wishlist-count></span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Cart">
+          <span class="icon-bag"></span>
+          <span class="badge is-hidden" data-cart-count></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section section--product">
+    <nav class="breadcrumb">
+      <a href="shop.html">Shop</a>
+      <span>›</span>
+      <span data-breadcrumb>Product</span>
+    </nav>
+
+    <article class="product-layout" data-product-detail>
+      <div class="product-media">
+        <div class="product-media__main art art--jar" data-product-image></div>
+        <div class="thumb-row" data-product-thumbs></div>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow" data-product-category>Collection</p>
+        <h1 data-product-title>Product title</h1>
+        <div class="price-row">
+          <strong data-product-price>$0.00</strong>
+          <span class="price-row__compare" data-product-compare></span>
+        </div>
+        <div class="rating-row">
+          <div class="stars" data-product-stars></div>
+          <span data-product-reviews></span>
+        </div>
+        <p class="product-info__copy" data-product-description></p>
+        <div class="button-row">
+          <button class="btn btn--outline" type="button" data-add-to-cart>Add to Cart</button>
+          <a class="btn btn--primary" href="order.html" data-buy-now>Buy Now</a>
+        </div>
+        <button class="wishlist-link" type="button" data-wishlist-toggle>
+          <span>♡</span>
+          <span data-wishlist-label>Add to wishlist</span>
+        </button>
+        <div class="detail-grid">
+          <div>
+            <h3>Why it works</h3>
+            <p>Built from the reference: strong product emphasis, simple hierarchy, and obvious conversion actions.</p>
+          </div>
+          <div>
+            <h3>Delivery</h3>
+            <p>Fast demo checkout flow. The Buy Now action routes to an order confirmation page.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>ABOKICHI</strong>
+      <p>Product detail page with cart actions.</p>
+    </div>
+    <a href="shop.html">Continue shopping</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
